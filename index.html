@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form>
+        <table border="1px solid black">
+        <tr><td><label>
+            Name: <input type="text" id="userName" required>
+        </label></td></tr>
+        <br><br>
+        <tr><td><label>
+            Father Name: <input type="text" id="fatherName" required>
+        </label></td></tr>
+        <br><br>
+        <tr><td><label>
+            Email: <input type="email" id="email" required>
+        </label></td></tr>
+        <br><br>
+        <tr><td><label>
+            Number: <input type="number" id="number" required>
+        </label></td></tr>
+        <br><br>
+        <tr><td><label>
+            D-O-B: <input type="date" id="dob" required>
+        </label></td></tr>
+        <br><br>
+        <tr><td><label>
+            Qualification: <input type="text" id="qualification" required>
+        </label></td></tr>
+        <br><br>
+        <tr><td><label>
+            Gender:
+                <label for="male"><input type="radio" id="male" name="gender" value="male" required>Male</label>
+                <label for="female"> <input type="radio" id="female" name="gender" value="female" required>Female</label>
+                <label for="other"><input type="radio" id="other" name="gender" value="other" required>Other</label>
+        </label></td></tr>
+        <br><br>
+        <tr><td><label>
+            Course: 
+                <select name="course" id="course" >
+                    <option value="Select option">Select option</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="JavaScript Mastry">JavaScript Mastry</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                </select>
+        </label></td></tr>
+        <br><br>
+        <tr><td><label>
+            Address: <textarea id="address" required></textarea>
+        </label></td></tr>
+        <br><br>
+        <tr><td><button id="submit">Submit</button></td></tr>
+    </table>
+    </form>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
