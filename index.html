@@ -5,63 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     
-    <form>
-        <table border="1px solid black">
-        <tr><td><label>
-            Name: <input type="text" id="userName" required>
-        </label></td></tr>
+    <div class="container">
+    <div class="row">
+        <label class="col-10 col-md-6">
+            Name: <br> &nbsp; &nbsp;<input type="text" id="userName" required>
+        </label>
         <br><br>
-        <tr><td><label>
-            Father Name: <input type="text" id="fatherName" required>
-        </label></td></tr>
+        <label class="col-10 col-md-6">
+            Father Name: <br> &nbsp; &nbsp;<input type="text" id="fatherName" required>
+        </label>
         <br><br>
-        <tr><td><label>
-            Email: <input type="email" id="email" required>
-        </label></td></tr>
+        <label class="col-10 col-md-6">
+            Email: <br> &nbsp; &nbsp;<input type="email" id="email" required>
+        </label>
         <br><br>
-        <tr><td><label>
-            Number: <input type="number" id="number" required>
-        </label></td></tr>
+        <label class="col-10 col-md-6">
+            Number: <br> &nbsp; &nbsp;<input type="number" id="number" required>
+        </label>
         <br><br>
-        <tr><td><label>
-            D-O-B: <input type="date" id="dob" required>
-        </label></td></tr>
+        <label class="col-10 col-md-6">
+            CNIC/B-Form: <br> &nbsp; &nbsp;<input type="number" id="cnic" required>
+        </label>
         <br><br>
-        <tr><td><label>
-            Qualification: <input type="text" id="qualification" required>
-        </label></td></tr>
+        <label class="col-10 col-md-6">
+            D-O-B: <br> &nbsp; &nbsp;<input type="date" id="dob" required>
+        </label>
         <br><br>
-        <tr><td><label>
-            Gender:
-                <label for="male"><input type="radio" id="male" name="gender" value="male" required>Male</label>
+        <label class="col-10 col-md-6">
+            Qualification: <br> &nbsp; &nbsp;<input type="text" id="qualification" required>
+        </label>
+        <br><br>
+        <label class="col-10 col-md-6">
+            Gender: <br>
+&nbsp; &nbsp;                <label for="male"><input type="radio" id="male" name="gender" value="male" required>Male</label>
                 <label for="female"> <input type="radio" id="female" name="gender" value="female" required>Female</label>
                 <label for="other"><input type="radio" id="other" name="gender" value="other" required>Other</label>
-        </label></td></tr>
+        </label>
         <br><br>
-        <tr><td><label>
-            Course: 
+        <label class="col-10 col-md-6">
+            Course: <br> &nbsp; &nbsp;
                 <select name="course" id="course" >
                     <option value="Select option">Select option</option>
                     <option value="Web Development">Web Development</option>
                     <option value="JavaScript Mastry">JavaScript Mastry</option>
                     <option value="Digital Marketing">Digital Marketing</option>
                 </select>
-        </label></td></tr>
+        </label>
         <br><br>
-        <tr><td><label>
-            Address: <textarea id="address" required></textarea>
-        </label></td></tr>
+        <label class="col-10 col-md-6">
+            Address: <br> &nbsp; &nbsp;<textarea id="address" required></textarea>
+        </label>
         <br><br>
-        <tr><td><button id="submit">Submit</button></td></tr>
-    </table>
-    </form>
+        <button id="submit" class="col-4 col-md-2">Submit</button>
+    </div>
+    </div>
 
-
-
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="app.js"></script>
 </body>
