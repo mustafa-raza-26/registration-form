@@ -18,6 +18,22 @@ submit.addEventListener('click', async ()=> {
     let genderInput = document.querySelector('input[name="gender"]:checked');
     let gender = genderInput ? genderInput.value : "Not Selected";
 
+    if (
+        userName.value.trim() === "" ||
+        fatherName.value.trim() === "" ||
+        email.value.trim() === "" ||
+        number.value.trim() === "" ||
+        cnic.value.trim() === "" ||
+        dob.value.trim() === "" ||
+        qualification.value.trim() === "" ||
+        course.value.trim() === "" ||
+        address.value.trim() === "" ||
+        gender === ""
+    ){
+        alert("Please fill all fields before submitting!");
+        return
+    }
+
     const { data, error } = await client
     .from('Form')
     .insert({
